@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: whitesmoke;
+}
+header > h1 {
+  margin: 5px;
+  color: orangered;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+  color: #072174;
+}
+
+.graph-canvas {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.scorecard {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 300px;
+  border-radius: 5px;
+  padding: 12px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.397);
+}
+
+#domAttributes1 > input,
+#domAttributes2 > input,
+#domAttributes3 > input {
+  text-align: center;
+  background: none;
+  width: 65px;
+  color: #072174;
+  font-size: 40px;
+  border: none;
+  outline: none;
+}
+
+.words-array {
+  background-color: white;
+  color: rgb(2, 39, 250);
+  align-self: center;
+  padding: 20px 0;
+  margin: 50px 0;
+  border-bottom: 1px solid black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.modeName {
+  margin: 10px;
+  font-size: 20px;
+}
+.toggle-btn {
+  width: 50px;
+  height: 24px;
+  background-color: white;
+  border-radius: 40px;
+  padding: 2px;
+  transition: all 300ms ease-in-out;
+  position: relative;
+  border: 2px solid blue;
+}
+
+.inner-circle {
+  width: 0px;
+  height: 0px;
+  border-top: 12px solid blue;
+  border-bottom: 12px solid blue;
+  border-right: 20px solid blue;
+  border-left: 12px solid blue;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+
+  transition: all 300ms ease-in-out;
+}
+.toggle-btn.active {
+  background-color: white;
+}
+.toggle-btn.active > .inner-circle {
+  margin-left: 17px;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-top: 12px solid blue;
+  border-bottom: 12px solid blue;
+  border-right: 20px solid blue;
+  border-left: 12px solid blue;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
+}
+
+.bg {
+  /* background-color: rgb(56, 20, 185, 0.06); */
+  color: rgba(178, 182, 176, 0.836);
+  font-weight: 400;
+}
+.bg-red {
+  color: red;
+  font-weight: 400;
+}
+.bg-space {
+}
+.bg-red-space {
+}
+.bg-next {
+  border-left: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    color: #072174;
+  }
+  .heading {
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: orangered;
+  }
+  .canvas-scorecard {
+    flex-direction: column;
+  }
+}
