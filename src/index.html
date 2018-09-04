@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <title>TypEasy</title>
+  <link rel="shortcut icon" href="typeasy.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>TYPING NINJA</h1>
+    </div>
+    <div>
+      <?xml version="1.0" encoding="iso-8859-1"?>
+      <svg class="stats-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1"
+        x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px"
+        height="512px">
+        <g>
+          <g>
+            <path d="M499.904,456.607H12.096C5.415,456.607,0,462.022,0,468.703c0,6.679,5.415,12.096,12.096,12.096h487.808    c6.679,0,12.096-5.417,12.096-12.096C512,462.023,506.585,456.607,499.904,456.607z"
+              fill="#006DF0" />
+          </g>
+        </g>
+        <g>
+          <g>
+            <path d="M468.37,88.305h-84.948c-6.679,0-12.096,5.417-12.096,12.096v82.24h-60.757V43.297c0-6.679-5.417-12.096-12.096-12.096    h-84.95c-6.679,0-12.096,5.417-12.096,12.096v228.882h-60.757V169.36c0-6.681-5.417-12.096-12.096-12.096H43.626    c-6.681,0-12.096,5.415-12.096,12.096v231.563c0,6.681,5.417,12.096,12.096,12.096h84.948h84.948h84.95h84.949h84.948    c6.681,0,12.096-5.417,12.096-12.096V100.401C480.466,93.722,475.051,88.305,468.37,88.305z M116.479,388.827H55.722V181.456    h60.757V388.827z M201.429,388.827h-60.757v-92.456h60.757V388.827z M286.378,194.737v194.09H225.62V55.393h60.758V194.737z     M371.328,388.827h-60.757V206.833h60.757V388.827z M456.276,388.827H395.52v-194.09v-82.24h60.757V388.827z"
+              fill="#006DF0" />
+          </g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+      </svg>
+    </div>
+    <div class="canvas-graph-accuracyAndNPM ">
+      <div class="chartAccuracyAndNPM"> <canvas id="chartAccuracyAndNPM" width="700" height="230"></canvas></div>
+    </div>
+    <div class="caret"></div>
+  </header>
+  <div class="container">
+    <div class="mode">
+      <div class="modeName">Learning </div>
+      <div class="toggle-btn">
+        <div class="inner-circle"> </div>
+      </div>
+      <div class="modeName">Test/Practice </div>
+    </div>
+    <div class="scorecard">
+      <div class="wpm card">
+        <div class="title">Gross Speed</div>
+        <div id="domAttributes1"> <input class="accuracy-input text-output" value="3" readonly> </div>
+      </div>
+      <div class="npm card">
+        <div class="title">Net Speed</div>
+        <div id="domAttributes2"> <input class="accuracy-input text-output" value="2" readonly> </div>
+      </div>
+      <div class="accuracy card">
+        <div class="title">Accuracy</div>
+        <div id="domAttributes3"> <input class="accuracy-input text-output" value="1" readonly> </div>
+      </div>
+
+    </div>
+    <div class="words-array">press start or space to start typing</div>
+    <div class="canvas-graph-errors">
+      <div class="chartErrors"> <canvas id="chartErrors" width="700" height="230"></canvas></div>
+    </div>
+
+  </div>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>

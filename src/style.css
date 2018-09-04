@@ -4,23 +4,69 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: whitesmoke;
 }
-header > h1 {
+header {
+  padding: 8px;
+  position: relative;
+}
+header h1 {
   margin: 5px;
   color: orangered;
 }
+header svg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
 .container {
-  width: 90%;
+  width: 90vw;
   margin: auto;
   text-align: center;
   padding: 30px;
   color: #072174;
 }
 
-.graph-canvas {
+.canvas-graph-errors {
   display: flex;
   justify-content: space-evenly;
 }
+.canvas-graph-accuracyAndNPM {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
 
+.canvas-graph-accuracyAndNPM.active {
+  z-index: 1000;
+  visibility: visible;
+  display: block;
+  padding: 20px;
+  background-color: white;
+  position: absolute;
+  top: 56px;
+  right: 10px;
+  border-radius: 10px;
+  border: 2px solid #3c3c5f;
+}
+.caret {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 8px;
+  width: 0px;
+  height: 0px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid #3c3c5f;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  transform: rotate(9deg);
+}
+.caret.active {
+  display: block;
+}
 .scorecard {
   display: flex;
   justify-content: space-around;

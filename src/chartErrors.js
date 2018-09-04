@@ -1,7 +1,7 @@
-var ctx = document.getElementById("myChart").getContext("2d");
+var ctxErrors = document.getElementById("chartErrors").getContext("2d");
 
-export default function chart(labels, allData, data) {
-  return new Chart(ctx, {
+export default function chartErrors(labels, allData, data) {
+  return new Chart(ctxErrors, {
     // The type of chart we want to create
     type: "bar",
 

@@ -1,6 +1,6 @@
 import * as allLevels from "./data.js";
 
-export function showSample(char, speed = 0) {
+export function getSample(char, speed = 0) {
   switch (char) {
     case "homeRowEasy":
     case "homeRowHard":
@@ -172,9 +172,9 @@ export function showSample(char, speed = 0) {
       };
     default:
       return {
-        currentSampleArr: allLevels.TOhard,
-        currentSampleName: "TOhard",
-        nextSample: "Chard"
+        currentSampleArr: allLevels.testArr,
+        currentSampleName: "testArr",
+        nextSample: "testPracticeArr"
       };
   }
 }
